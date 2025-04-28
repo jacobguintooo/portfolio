@@ -1,45 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>About | Lord Jacob Guinto</title>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
   <video autoplay loop muted plays-inline class="back-vid">
     <source src="galaxy.mp4" type="video/mp4">
   </video>
   <section class="main-section">
     <nav>
-        <h1 data-aos="zoom-in" data-aos-duration="1000"><span style="color: #4acfee;">Jacob</span>  Guinto</h1>
-      <ul>
+      <h1 data-aos="zoom-in" data-aos-duration="1000"><span style="color: #4acfee;">Lord Jacob</span> Guinto</h1>
+      <div class="hamburger" id="hamburger">
+        <i class='bx bx-menu'></i>
+      </div>
+      <ul id="nav-links">
         <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></li>
-        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a class="active" href="about.html">About</a></li>
-        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="certification.html">Certifications</a></li>
-        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="experience.html">Experience</a></li>
+        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a class="active"
+            href="about.html">About</a></li>
+        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a
+            href="certification.html">Certifications</a></li>
+        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="experience.html">Experience</a>
+        </li>
       </ul>
     </nav>
-    <div class="hero">
+    <div class="hero-centered">
       <div class="hero-info">
-        <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">Hi, I'm Jacob Guinto</h1>
-        <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="900">WEB Developer</h2>
-        <p data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1000">Welcome to my portfolio! I'm an IT Student from St. Dominic College of Asia, Passionate about technology and innovation. Here, you'll find a showcase of my projects, skills, and experiences in various IT domains. I'm dedicated to continious learning and crafting solutions that will make a difference. Feel free to explore and connect with me!</p>
-      </div>
-      </div>
-    <div class="Buttons"> 
-        <ul class="ul-icons">
-          <li><a href="https://github.com/jacobguintooo" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200"><i class='bx bxl-github'></i></a></li>
-          <li><a href="https://www.facebook.com/jacobguintooo" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500"><i class='bx bxl-facebook-circle'></i></a></li>
-        </ul>
-      </div>
+        <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">Hi, I'm Lord Jacob Guinto</h1>
+        <p data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1000">I am an aspiring IT professional with a
+          strong passion for web development and software engineering. Ever since I started learning how to code, I have
+          been fascinated by the power of technology to solve real-world problems.
 
- </section>
- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          My ultimate goal is to become a skilled full-stack web developer and eventually specialize in mobile
+          application development. I aim to work on innovative projects that enhance user experiences.</p>
+      </div>
+    </div>
+    <div class="Buttons">
+      <ul class="ul-icons">
+        <li><a href="https://github.com/jacobguintooo" data-aos="fade-up" data-aos-duration="1000"
+            data-aos-delay="1200"><i class='bx bxl-github'></i></a></li>
+        <li><a href="https://www.facebook.com/jacobguintooo" data-aos="fade-up" data-aos-duration="1000"
+            data-aos-delay="1500"><i class='bx bxl-facebook-circle'></i></a></li>
+      </ul>
+    </div>
+
+  </section>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    hamburger.onclick = function () {
+      navLinks.classList.toggle("show");
+    };
   </script>
 </body>
+
 </html>

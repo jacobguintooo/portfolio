@@ -449,6 +449,10 @@ nav a:hover,
   z-index: 999;
 }
 
+.paragraph-about {
+  padding-bottom: 1.2em;
+}
+
 @media (max-width: 1080px) {
   .hamburger {
     display: block;
@@ -458,6 +462,10 @@ nav a:hover,
     display: none;
     flex-direction: column;
     gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
   }
 
   nav ul {
